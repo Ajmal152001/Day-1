@@ -1,0 +1,93 @@
+A)HTTP/1.1 AND HTTP/2:
+
+The Hypertext Transfer Protocol, or HTTP, is an application protocol that has been 
+the de facto standard for communication on the World Wide Web since its invention in 1989. 
+From the release of HTTP/1.1 in 1997 until recently, there have been few revisions to the protocol. 
+But in 2015, a reimagined version called HTTP/2 came into use, which offered several methods to decrease latency, 
+especially when dealing with mobile platforms and server-intensive graphics and videos. 
+HTTP/2 has since become increasingly popular, with some estimates suggesting that around a third of all websites in the world support it. 
+In this changing landscape, web developers can benefit from understanding. 
+the technical differences between HTTP/1.1 and HTTP/2, allowing them to make informed and efficient decisions about evolving best practices.
+
+the main differences between HTTP/1.1 and HTTP/2, concentrating. 
+On the technical changes HTTP/2 has adopted to achieve a more efficient Web protocol.
+
+HTTP/1.1
+
+Developed by Timothy Berners-Lee in 1989 as a communication standard for the World Wide Web, 
+HTTP is a top-level application protocol that exchanges information between a client computer and a local or remote web server. 
+In this process, a client sends a text-based request to a server by calling a method like GET or POST. In response, 
+the server sends a resource like an HTML page back to the client.
+
+GET /index.html HTTP/1.1
+Host: www.example.com
+
+HTTP/2
+
+HTTP/2 began as the SPDY protocol, developed primarily at Google with the intention of reducing web page load latency by using techniques such as compression, multiplexing, and prioritization. 
+This protocol served as a template for HTTP/2 when the Hypertext Transfer Protocol working group httpbis of the IETF (Internet Engineering Task Force) put the standard together, culminating in the publication of HTTP/2 in May 2015. 
+From the beginning, many browsers supported this standardization effort, including Chrome, Opera, Internet Explorer, and Safari. 
+Due in part to this browser support, there has been a significant adoption rate of the protocol since 2015, with especially high rates among new sites.
+
+
+HTTP/2 breaks away from the strict request-response semantics and enables one-to-many and server-initiated push workflows that open up a world of new interaction possibilities both within and outside the browser. 
+This is an enabling feature that will have important long-term consequences both for how we think about the protocol, and where and how it is used.
+
+
+
+B)Objects And Its Internal Representation In JavaScript:
+
+
+The following code assigns a simple value (Mercedes) to a variable named car:
+
+var car = "Mercedes";
+
+Objects are variables too. But objects can contain many values.
+
+The following code assigns many values (Mercedes, C-class, White and soo on) to a variable named Car:
+
+var car = {Make: “Mercedes”, Model: “C-Class”, Color: “White”, Fuel: Diesel, Weight: “850kg”, Mileage: “8Kmpl”, Rating: 4.5};
+
+The values are written as name:value pairs (name and value separated by a colon).
+
+Syntax:
+
+      var <object-name> = {key1: value1, key2: value2,... keyN: valueN};
+
+
+
+
+C)Write a code to get the input in the given format and print the output in the given format:
+
+Input Description:
+To take an integer value
+
+Output Description:
+Print the integer value
+
+Sample Input :
+2
+Sample Output :
+2
+
+
+Code:
+
+const readline = require('readline');
+
+const inp = readline.createInterface({  
+	input: process.stdin
+});
+
+let value;
+
+inp.on("line", (data) => { 
+	value = data;
+});
+
+inp.on("close", () => {	
+    console.log(value)
+});
+
+Output:
+2
